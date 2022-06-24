@@ -641,7 +641,7 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
      *
      * @return mixed
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset) : mixed
     {
         return $this->getAttribute($offset);
     }
